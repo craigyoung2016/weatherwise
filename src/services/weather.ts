@@ -134,11 +134,11 @@ export async function get7DayForecast(location: Location): Promise<Forecast[]> {
  * @param city The city for which to retrieve location data.
  * @returns A promise that resolves to a Location object.
  */
-export async function getLocation(city: string): Promise<Location> {
-  // TODO: Implement this by calling an API.
-
+export async function getLocation(_city: string): Promise<Location> {
   return {
-    lat: 34.052235,
-    lng: -118.243683,
+    // Return a random location for demonstration purposes.
+    // In a real application, this would call an API to get the location for the given city.
+    lat: Math.random() * 180 - 90, // Latitude between -90 and 90
+    lng: Math.random() * 360 - 180, // Longitude between -180 and 180
   };
 }

@@ -59,8 +59,7 @@ export default function Home() {
   }, [city]);
 
   const handleSearch = async () => {
-    const newLocation = await getLocation(city);
-    setLocation(newLocation);
+    setCity(city)
   };
 
   return (
