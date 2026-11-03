@@ -67,7 +67,7 @@ const generateWeatherTipFlow = ai.defineFlow<
     inputSchema: GenerateWeatherTipInputSchema,
     outputSchema: GenerateWeatherTipOutputSchema,
   },
-  async input => {
+  async (input: GenerateWeatherTipInput) => {
     const {output} = await prompt(input);
     return output!;
   }
